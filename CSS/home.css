@@ -1,1 +1,347 @@
-
+    @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+    * {
+        margin: 0;
+    }
+    
+    body {
+        box-sizing: border-box;
+    }
+    
+    nav {
+        color: #FFF;
+        float: center;
+        margin: 30px 90px;
+    }
+    
+    nav ul {
+        list-style: none;
+    }
+    
+    nav ul li {
+        float: right;
+        transition: .3s;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #6598C7;
+        transition: .5;
+        font-size: 16px;
+        margin-left: 16px;
+    }
+    
+    nav ul li:hover a {
+        text-decoration: none;
+        color: #7DBD07;
+    }
+    
+    .sign-in-up li a {
+        text-decoration: none;
+        color: #3B5284;
+        transition: .5;
+        font-size: 15px;
+        margin-left: 16px;
+    }
+    
+    .sign-in-up li:hover a {
+        text-decoration: none;
+        color: #47b39d;
+    }
+    
+    .logo {
+        width: 35px;
+        height: 35px;
+        background: #EFEEF5;
+        float: left;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+    }
+    
+    .logo span {
+        color: #e9a92a;
+        font-size: 2em;
+        line-height: 1;
+        padding-left: 10px;
+        font-weight: bold;
+    }
+    
+    .logo span:hover {
+        color: #925F17;
+    }
+    
+    .banner img {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    
+    .banner h2 {
+        color: #0A2004;
+        text-transform: uppercase;
+        font-size: 40px;
+        line-height: 2;
+        letter-spacing: 2px;
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    .banner p {
+        color: #455E14;
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin: 2em auto;
+        max-width: 700px;
+        text-align: left;
+    }
+    
+    .banner section {
+        position: absolute;
+        top: 70%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .banner .button {
+        border: none;
+        border-radius: 10px;
+        background: #7ba13a;
+        width: 150px;
+        border: none;
+        height: 45px;
+        position: absolute;
+        margin: 0 auto;
+        bottom: -21px;
+        text-transform: uppercase;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    .button:hover span {
+        padding-right: 25px;
+    }
+    
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    
+    .banner button:hover {
+        color: #455E14;
+    }
+    
+    .container h2 {
+        padding-top: 10px;
+        font-size: 34px;
+        line-height: 2;
+        text-align: center;
+    }
+    
+    .container p {
+        padding: 0 0 30px;
+        text-align: center;
+    }
+    
+    img {
+        width: 230px;
+        height: 270px;
+    }
+    
+    .img-box {
+        width: 230px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        display: inline-block;
+        margin: 0 30px 20px 0;
+    }
+    
+    .img-box:last-child {
+        margin-right: 0;
+    }
+    
+    .img-txt {
+        padding: 15px 0;
+    }
+    
+    .img-txt p {
+        padding-bottom: 0;
+    }
+    
+    .img-txt .button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #AAB952;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .img-txt .button:hover {
+        background-color: #777D71;
+    }
+    
+    .checked {
+        color: orange;
+    }
+    
+    .price {
+        color: grey;
+    }
+    /* =============================================== */
+    
+    .header {
+        text-align: center;
+        padding: 32px;
+    }
+    /* Style the buttons */
+    
+    .btn a {
+        text-decoration: none;
+        color: #7C9F24;
+    }
+    
+    .btn a:hover {
+        text-decoration: none;
+        color: #d2ced2;
+    }
+    
+    .btn {
+        border: none;
+        outline: none;
+        padding: 10px 16px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    
+    .btn:hover {
+        background-color: #06283B;
+    }
+    
+    .btn.active {
+        background-color: #D2CED1;
+    }
+    /* ======================================= */
+    
+    @media (max-width:992px) {
+        .banner-text h2 {
+            color: #0A2004;
+            text-transform: uppercase;
+            font-size: 30px;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            text-align: left;
+            font-weight: bold;
+        }
+        .banner p {
+            color: #455E14;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin: auto;
+            max-width: 400px;
+            text-align: left;
+        }
+        .banner .button {
+            border: none;
+            border-radius: 10px;
+            background: #7ba13a;
+            width: 100px;
+            border: none;
+            height: 35px;
+            position: absolute;
+            margin: auto;
+            bottom: -21px;
+            text-transform: uppercase;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+    }
+    
+    @media (max-width:767px) {
+        .banner-text h2 {
+            color: #0A2004;
+            text-transform: uppercase;
+            font-size: 20px;
+            line-height: 1;
+            letter-spacing: .5px;
+            text-align: left;
+            font-weight: bold;
+        }
+        .banner p {
+            color: #455E14;
+            font-size: 10px;
+            letter-spacing: 1px;
+            margin: auto;
+            max-width: 300px;
+            text-align: left;
+        }
+        .banner .button {
+            border: none;
+            border-radius: 10px;
+            background: #7ba13a;
+            width: 50px;
+            border: none;
+            height: 25px;
+            position: absolute;
+            margin: auto;
+            bottom: -21px;
+            text-transform: uppercase;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .banner-text h2 {
+            color: #0A2004;
+            text-transform: uppercase;
+            font-size: 15px;
+            line-height: 1;
+            text-align: left;
+            font-weight: bold;
+        }
+        .banner p {
+            color: #455E14;
+            font-size: 8px;
+            margin: auto;
+            max-width: 200px;
+            text-align: left;
+        }
+        .banner .button {
+            border: none;
+            border-radius: 10px;
+            background: #7ba13a;
+            width: 70px;
+            border: none;
+            height: 15px;
+            position: absolute;
+            margin: auto;
+            bottom: -21px;
+            text-transform: uppercase;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+    }
