@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Registeration</title>
+    <link rel="icon" type="image/png" href="Image/icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="CSS/form.css">
+    <link rel="stylesheet" type="text/css" href="CSS/form1.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="login100-pic js-tilt" data-tilt>
+                    <img src="Image/submit.gif" alt="Submit" height="500px">
+                </div>
+
+                <form class="login100-form validate-form" method="POST">
+                    <span class="login100-form-title">
+						Register Your Account
+					</span>
+                    <div class="wrap-input100 validate-input" data-validate="Valid first_name is required: ex@abc.xyz">
+                        <input class="input100" type="text" name="first_name" placeholder="First Name" required="required" autocomplete="off">
+                        <span class="focus-input100"></span>
+
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Valid middle_name is required: ex@abc.xyz">
+                        <input class="input100" type="text" name="middle_name" placeholder="Middle Name" autocomplete="off">
+                        <span class="focus-input100"></span>
+
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Valid last_name is required: ex@abc.xyz">
+                        <input class="input100" type="text" name="last_name" placeholder="Last Name" required="required" autocomplete="off">
+                        <span class="focus-input100"></span>
+
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Valid gender is required: ex@abc.xyz">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-male" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" id="male" name="gender" value="male">&nbsp;&nbsp;&nbsp;Male &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa fa-female" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" id="female" name="gender" value="female">&nbsp;&nbsp;&nbsp;Female
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input class="input100" type="email" name="email" placeholder="Email@gmail.com" required="required" autocomplete="off">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+                        <input class="input100" type="password" name="pass" placeholder="Password">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+                    </div>
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" type="submit" href="home.html">
+                            <a href="#">Register</a>
+						</button>
+
+                    </div>
+                    <div class="text-center p-t-136">
+                        <a class="txt2" href="login.html">
+							If You Have A Member Account,<br> Back to Member Login...<br>
+                            Click Here!
+                    
+						</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
