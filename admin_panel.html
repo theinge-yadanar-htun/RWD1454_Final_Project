@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="icon" type="image/png" href="Image/icons/admin.png" />
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/adminpanel.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="logo"><span>Helianthus</span></div>
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="#" onclick="clickMe()">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+
+    <main class="container">
+        <table>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Plant ID</th>
+                <th scope="col">Instock Item</th>
+                <th scope="col">Price</th>
+            </tr>
+            <tr>
+                <td id="ParlonName" scope="row" data-label="Name"></td>
+                <td id="ParlonID" data-label="Plant ID"></td>
+                <td id="ParlonInStockItem" data-label="Instock Item"></td>
+                <td id="ParlonPrice" data-label="Price"></td>
+            </tr>
+            <tr>
+                <td id="collaName" scope="row" data-label="Name"></td>
+                <td id="collaID" data-label="Plant ID"></td>
+                <td id="collaInStockItem" data-label="Instock Item"></td>
+                <td id="collaPrice" data-label="Price"></td>
+            </tr>
+            <tr>
+                <td id="panthuriumName" scope="row" data-label="Name"></td>
+                <td id="panthuriumID" data-label="Plant ID"></td>
+                <td id="panthuriumInStockItem"></td>
+                <td id="panthuriumPrice" data-label="Price"></td>
+            </tr>
+            <tr>
+                <td id="wanthuriumName" scope="row" data-label="Name"></td>
+                <td id="wanthuriumID" data-label="Plant ID"></td>
+                <td id="wanthuriumInStockItem" data-label="Instock Item"></td>
+                <td id="wanthuriumPrice" data-label="Price"></td>
+            </tr>
+        </table>
+    </main>
+    <script src="JS/admin_panel.js"></script>
+    <script src="JS/mock_data.js"></script>
+
+</body>
+
+</html>
